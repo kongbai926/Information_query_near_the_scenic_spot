@@ -1,7 +1,5 @@
 import pandas as pd
 import requests
-from bs4 import BeautifulSoup
-from 经纬度查询并显示 import get_get_location_m
 
 loc_file = pd.read_excel('A级旅游景区名录.xlsx')
 loc_data = loc_file[loc_file['等级'] == '5A']
@@ -35,13 +33,6 @@ header = {
 uli = "https://map.baidu.com/?newmap=1&reqflag=pcmap&biz=1&from=webmap&da_par=direct&pcevaname=pc4.1&qt=nb&r=1000"\
     "&l=19&gr_radius=1000&pn=0&device_ratio=1&da_src=shareurl&tn=B_NORMAL_MAP"\
     "&nn=0&ie=utf-8&newfrom=zhuzhan_webmap"
-# &wd=美食
-# &nb_x=11569082.45
-# &nb_y=3907956.69
-# &b=(11568742.95,3907823.19;11569421.95,3908150.19)
-
-# &u_loc=11873801,3031802
-# &uid=6e3b7a6e4334c5ff047ce84d
 
 response = requests.get(uli, headers = header, params = data)
 # response = requests.get(uli, headers=header)
