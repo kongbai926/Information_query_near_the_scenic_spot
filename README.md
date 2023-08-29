@@ -1,5 +1,4 @@
 # Information_query_near_the_scenic_spot
-[toc]
 
 ## 基于 selenium 访问高德地图获取景点附近美食或酒店信息
 
