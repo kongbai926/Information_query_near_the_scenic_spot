@@ -51,8 +51,8 @@ def spyder_get_data(url):
     # 打开网页
     try:
         driver.get(url)
-        cookie = {'name': 'x-csrf-token', 'value': '4674d9cc4c97968d74763e840ed70bc5',
-                  'name': 'passport_login', 'value': 'NDY5MDYxNzE4LGFtYXBCdXNRUUlKRmYsbGxxZGw2NTZwd2docXNjenFocGN4eGdwbWJyNG5jd2csMTY5MzI4MTM1OSxaRGc1TmpFM01EZzNOVFkyTUdabVptSmlNV1kwWW1GbU9HWTFZek0yWkdVPQ%3D%3D'
+        cookie = {'name': 'x-csrf-token', 'value': 'xxxxxxx',
+                  'name': 'passport_login', 'value': 'xxxxxxx'
                   }
         driver.add_cookie(cookie)
         time.sleep(5)
