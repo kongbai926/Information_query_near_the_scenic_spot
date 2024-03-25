@@ -6,7 +6,7 @@ import folium
 import webbrowser
 def get_get_location_m(name):
     url = "https://restapi.amap.com/v3/place/text?s=rsv3" \
-          "&children=&key=b1a5c61ed6fd006b6e5db7fce30e755f"\
+          "&children=&key=xxxxxx-token"\
           "&jscode=1c8a0dce1957438f8af72cc1e9c9fa8f&page=1" \
           "&offset=10&city=510100&language=zh_cn" \
           "&callback=jsonp_755735_" \
@@ -47,7 +47,7 @@ tiles='http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style
     ).add_to(map_osm)
     map_osm.save('f1.html')
     webbrowser.open('f1.html')
-##location_ = get_get_location_m("建设一路  武汉科技大学")['location']
+##location_ = get_get_location_m("地址")['location']
 ##loca_list = list(localtion_.split(','))
 ###print(loca_list)
 ##show_map_by_location(loca_list)
